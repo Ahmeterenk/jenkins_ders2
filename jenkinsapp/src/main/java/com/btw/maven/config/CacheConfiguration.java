@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, com.btw.maven.domain.User.class.getName());
             createCache(cm, com.btw.maven.domain.Authority.class.getName());
             createCache(cm, com.btw.maven.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.btw.maven.domain.Region.class.getName());
+            createCache(cm, com.btw.maven.domain.Country.class.getName());
+            createCache(cm, com.btw.maven.domain.Location.class.getName());
+            createCache(cm, com.btw.maven.domain.Department.class.getName());
+            createCache(cm, com.btw.maven.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.btw.maven.domain.Task.class.getName());
+            createCache(cm, com.btw.maven.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.btw.maven.domain.Employee.class.getName());
+            createCache(cm, com.btw.maven.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.btw.maven.domain.Job.class.getName());
+            createCache(cm, com.btw.maven.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.btw.maven.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
